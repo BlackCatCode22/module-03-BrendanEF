@@ -154,3 +154,46 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "float") to str
 (.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
 0.8475
+
+---
+
+## Integer Program
+
+`total = 0`
+`count = 0`
+`while True:`
+    `user = input("Enter an integer or 'done' to finish: ")`
+    `if user == 'done':`
+        `break`
+    `try:`
+        `number = int(user)`
+        `total = total + number`
+        `count = count + 1`
+    `except ValueError:`
+        `print("Invalid input. Please enter an integer or 'done'.")`
+        `continue`
+`average = total / count`
+`print(total)`
+`print(count)`
+`print(average)`
+
+### Windows PowerShell Terminal
+
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py integeruserinputModule3.py
+Enter an integer or 'done' to finish: 2
+Enter an integer or 'done' to finish: 4
+Enter an integer or 'done' to finish: 6
+Enter an integer or 'done' to finish: 8
+Enter an integer or 'done' to finish: 10
+Enter an integer or 'done' to finish: done
+30
+5
+6.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py integeruserinputModule3.py
+Enter an integer or 'done' to finish: string
+Invalid input. Please enter an integer or 'done'.
+Enter an integer or 'done' to finish: 3
+Enter an integer or 'done' to finish: 6
+Enter an integer or 'done' to finish: string2
+Invalid input. Please enter an integer or 'done'.
+Enter an integer or 'done' to finish:
