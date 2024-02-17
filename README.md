@@ -109,3 +109,48 @@ Enter a number: done
 15.0 3 5.0
 
 ---
+
+## Video 3 (Exercise 6.5)
+
+`str = 'X-DSPAM-Confidence: 0.8475'`
+
+`ipos = str.find(':')`
+`# print(ipos)`
+`piece = str[ipos+2:]`
+`# print(piece)`
+`# print(piece+42.0) # will fail`
+`value = float(piece)`
+`print(value)`
+`# print(value+42.0)`
+
+### Windows PowerShell Terminal
+
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+X-DSPAM-Confidence:0.8475
+18
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+18
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+18
+ 0.8475
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+ 0.8475
+0.8475
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+18
+0.8475
+0.8475
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+0.8475
+0.8475
+42.8475
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+18
+0.8475
+Traceback (most recent call last):
+  File "C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python\stringsModule3.py", line 7, in <module>
+    print(piece+42.0)
+          ~~~~~^~~~~
+TypeError: can only concatenate str (not "float") to str
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py stringsModule3.py
+0.8475
