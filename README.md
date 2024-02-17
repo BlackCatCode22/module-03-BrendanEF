@@ -169,7 +169,7 @@ TypeError: can only concatenate str (not "float") to str
         `number = int(user)`
         `total = total + number`
         `count = count + 1`
-    `except ValueError:`
+    `except:`
         `print("Invalid input. Please enter an integer or 'done'.")`
         `continue`
 `average = total / count`
