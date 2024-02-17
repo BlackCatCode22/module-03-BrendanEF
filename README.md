@@ -197,3 +197,36 @@ Enter an integer or 'done' to finish: 6
 Enter an integer or 'done' to finish: string2
 Invalid input. Please enter an integer or 'done'.
 Enter an integer or 'done' to finish:
+
+---
+
+## Min and Max Number List Program
+
+`number = []`
+`while True:`
+    `user = input("Enter a number or 'done' to finish: ")`
+    `if user == 'done':`
+        `break`
+    `try:`
+        `num = float(user)`
+        `number.append(num)`
+    `except:`
+        `print("invalid input. Please enter a number or 'done'.")`
+        `continue`
+`print(max(number))`
+`print(min(number))`
+
+### Windows PowerShell Terminal
+
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py numberlistminmaxModule3.py
+Enter a number or 'done' to finish: 51  
+Enter a number or 'done' to finish: 34
+Enter a number or 'done' to finish: 74
+Enter a number or 'done' to finish: 2
+Enter a number or 'done' to finish: 9
+Enter a number or 'done' to finish: done
+74.0
+2.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py numberlistminmaxModule3.py
+Enter a number or 'done' to finish: fhsdj
+invalid input. Please enter a number or 'done'.
